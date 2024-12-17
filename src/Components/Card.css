@@ -1,0 +1,124 @@
+
+.Card{
+    background-color: rgba(224, 224, 224, 0.255);
+    width: 200px;
+    height: 60%;
+    border-radius: 9px;
+    box-shadow: 6px;
+    border: 1px solid rgba(145, 182, 149, 0.439);
+
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-bottom: 25px;
+
+    padding: 20px;
+    padding-bottom: 40px;
+    
+}
+.Card:hover   { cursor: pointer;}
+
+
+
+.case1{
+height: 350px;
+object-fit: cover;
+position: relative;
+left:40px;
+}
+
+.name1{
+    text-align: center;
+    vertical-align: bottom;
+    margin-top: 2px;
+    width: 200px; 
+    overflow: hidden; /* uzunluktan taşanları gizle */
+    white-space:normal;/* yazıyı alt satır indirme */
+    text-overflow: ellipsis; /* css yazının sonuna üç nokta koymak üç nokta koyacak */
+    display:-webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 50px;
+
+    
+   
+}
+.author2{
+    text-align: center;
+    vertical-align: bottom;
+    font-weight: 100;
+    font-size: medium;
+    margin-top: -10px;
+    width: 200px; 
+    overflow: hidden; /* uzunluktan taşanları gizle */
+    white-space:nowrap;/* yazıyı alt satır indirme */
+    text-overflow: ellipsis;
+}
+
+.amount{
+    text-align: center;
+    vertical-align: bottom;
+    margin-top: -13px;
+    margin-top: 5px;;
+}
+
+
+.buy{
+    margin-left: 40px;
+    width: 130px;
+    height: 35px;
+    border-radius:10px ;
+    border-color: transparent;
+    font-size: medium;
+    opacity:0;
+}
+
+.buy-no{
+    margin-left: 40px;
+    width: 130px;
+    height: 35px;
+    border-radius:10px ;
+    border-color: transparent;
+    font-size: medium;
+    opacity: 0;
+}
+
+.buy-no:hover{
+    opacity: 100%;
+    background-color: rgb(77, 77, 78);
+    color: white;
+}
+.buy:hover{
+
+opacity: 100%;
+background-color: rgb(106, 176, 101);
+color: white;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .buy{
+        opacity: 100%;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .buy{
+        opacity: 100%;
+        margin-left: 40px;
+        background-color: rgb(106, 176, 101);
+        color: white;
+        width: 130px;
+        height: 35px;
+        border-radius:10px ;
+
+    }
+    .buy-no{
+        margin-left: 40px;
+        opacity: 100%;
+        background-color: rgb(77, 77, 78);
+        color: white;
+        width: 130px;
+        height: 35px;
+        border-radius:10px ;
+    }
+  }
